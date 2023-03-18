@@ -11,8 +11,8 @@ public class Course {
      */
     public Course(int crn, String courseCode, String courseName) {
         setCrn(crn);
-        this.courseCode = courseCode;
-        this.courseName = courseName;
+        setCourseCode(courseCode);
+        setCourseName(courseName);
     }
 
 
@@ -58,7 +58,8 @@ public class Course {
 
 
 
-    
+
+
 
     /**
      * a course name should describe what the course is about
@@ -71,6 +72,49 @@ public class Course {
             throw new IllegalArgumentException("course name must be 2 to 30 characters in length");
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+    /**
+     * getters for the course object class
+     */
+    public int getCrn() {
+        return crn;
+    }
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+
+
+
+
+
+
+    public String toString () {
+
+
+        return String.format("%d-%s-%s", crn, courseCode, courseName);
+
+
+    }
+
+
+
+
 
 
 
