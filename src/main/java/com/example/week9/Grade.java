@@ -42,4 +42,13 @@ public class Grade {
     }
 
 
+
+    public String toString () {
+
+
+        return String.format("%d-%d-%d", studentNum, crn, grade);
+
+
+    }
+
 }

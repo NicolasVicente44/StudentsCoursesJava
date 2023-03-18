@@ -53,7 +53,7 @@ public class DBUtility {
 
 
 
-    private static ArrayList<Grade> getCoursesFromDB(int studentNumber) {
+    public static ArrayList<Grade> getGradesFromDB(int studentNumber) {
 
         ArrayList<Grade> grades = new ArrayList<>();
 
